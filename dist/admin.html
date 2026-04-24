@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomos Admin</title>
+  <script type="module" crossorigin src="/assets/admin-DZZO4xFB.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/content-store-1xcvZQWm.js">
+  <link rel="stylesheet" crossorigin href="/assets/admin-BrrJo7M2.css">
+</head>
+<body>
+  <div class="admin-shell">
+    <section class="admin-auth" data-admin-auth>
+      <div class="admin-auth__card">
+        <p class="admin-auth__eyebrow">Nomos CMS</p>
+        <h1 class="admin-auth__title">Вход в админку</h1>
+        <p class="admin-auth__text">Лёгкая локальная админка для редактирования текстов страниц и карточек слайдеров.</p>
+
+        <form class="admin-form" data-admin-login>
+          <label class="admin-field">
+            <span>Логин</span>
+            <input class="admin-input" type="text" name="login" autocomplete="username" required>
+          </label>
+
+          <label class="admin-field">
+            <span>Пароль</span>
+            <input class="admin-input" type="password" name="password" autocomplete="current-password" required>
+          </label>
+
+          <button class="admin-button" type="submit">Войти</button>
+          <p class="admin-error" data-admin-error></p>
+        </form>
+      </div>
+    </section>
+
+    <div class="admin-app" data-admin-app hidden>
+      <aside class="admin-sidebar">
+        <div class="admin-logo">Nomos Admin</div>
+        <nav class="admin-nav" data-admin-nav></nav>
+
+        <div class="admin-sidebar__actions">
+          <button class="admin-button admin-button--ghost" type="button" data-admin-logout>Выйти</button>
+        </div>
+      </aside>
+
+      <main class="admin-main">
+        <section class="admin-panel">
+          <div class="admin-panel__top">
+            <div>
+              <p class="admin-panel__eyebrow">Редактор страниц</p>
+              <h2 class="admin-panel__title" data-admin-page-title></h2>
+              <p class="admin-panel__text" data-admin-page-text></p>
+            </div>
+
+            <div class="admin-panel__actions">
+              <button class="admin-button" type="button" data-admin-save>Сохранить</button>
+              <button class="admin-button admin-button--ghost" type="button" data-admin-reset>Сбросить страницу</button>
+            </div>
+          </div>
+
+          <section class="admin-section">
+            <h3 class="admin-section__title">Тексты</h3>
+            <p class="admin-section__note">Поля сохраняют HTML содержимое блока. Для переноса строки можно использовать `<br>`.</p>
+            <div class="admin-editor" data-admin-texts></div>
+          </section>
+
+          <section class="admin-section">
+            <h3 class="admin-section__title">Слайдеры</h3>
+            <p class="admin-section__note">Здесь можно редактировать карточки существующих слайдеров и добавлять новые с фотографиями.</p>
+            <div class="admin-editor" data-admin-sliders></div>
+          </section>
+
+          <div class="admin-toolbar">
+            <div class="admin-toolbar__status" data-admin-status></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
