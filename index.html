@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Номос — юридическая компания</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="page">
+
+  <div class="decor decor--top-right"></div>
+  <div class="decor decor--left"></div>
+  <div class="decor decor--bottom-right"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <img src="assets/images/logo.svg" alt="Номос">
+      </a>
+
+      <nav class="nav">
+        <a href="/" class="nav__link nav__link--active">Главная</a>
+        <a href="about.html" class="nav__link">О компании</a>
+        <a href="services-business.html" class="nav__link">Услуги для бизнеса</a>
+        <a href="services-citizens.html" class="nav__link">Услуги для граждан</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+        <a href="cases.html" class="nav__link">Кейсы</a>
+      </nav>
+
+      <a href="tel:+79991234567" class="header-phone">
+        <span>+7(999)123-45-67</span>
+        <small>позвоните сейчас</small>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1>Номос — ваша надёжная юридическая компания</h1>
+          <p>Выберите свою роль, чтобы продолжить и получить доступ к нужной информации</p>
+
+          <div class="hero__buttons">
+            <a href="services-business.html" class="btn btn--red">Для бизнеса</a>
+            <a href="services-citizens.html" class="btn btn--orange">Для граждан</a>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <img src="assets/images/placeholder-photo.svg" alt="Юрист">
+        </div>
+      </div>
+    </section>
+
+    <section class="about-preview">
+      <div class="container">
+        <div class="about-card">
+          <div class="section-label">О компании</div>
+
+          <div class="about-card__content">
+            <div class="about-card__text">
+              <h2>О юридической компании «Номос»</h2>
+              <p>
+                Наша компания сочетает в себе опыт и инновационный подход, предоставляя услуги
+                как для юридических лиц, так и для физических с 2002 года. Мы гордимся тем,
+                что можем предложить персонализированные решения, учитывающие уникальные
+                потребности каждого клиента, и обеспечиваем надежную правовую поддержку
+                на всех этапах взаимодействия. Выбирая нашу компанию, вы выбираете уверенность
+                в завтрашнем дне и гарантированное качество правовых услуг.
+              </p>
+
+              <div class="stats">
+                <div class="stats__item">
+                  <strong>23 года</strong>
+                  <span>Защищаем и отстаиваем ваши интересы</span>
+                </div>
+                <div class="stats__item">
+                  <strong>500 000 +</strong>
+                  <span>Клиентов физических лиц</span>
+                </div>
+                <div class="stats__item">
+                  <strong>100 000 +</strong>
+                  <span>Клиентов юридических лиц</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-card__image">
+              <img src="assets/images/placeholder-figure.svg" alt="Фемида">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specialists">
+      <div class="container">
+        <div class="section-label section-label--center">немного о нас</div>
+        <h2 class="section-title section-title--center">Наши специалисты</h2>
+
+        <div class="specialists__slider">
+          <button class="slider-arrow slider-arrow--left" type="button">‹</button>
+
+          <div class="specialists__grid">
+            <article class="specialist-card">
+              <img src="assets/images/placeholder-photo.svg" alt="Иван Петров">
+              <h3>Иван Петров</h3>
+              <p>100+ выигранных дел</p>
+              <span>5 лет опыта</span>
+            </article>
+
+            <article class="specialist-card">
+              <img src="assets/images/placeholder-photo.svg" alt="Иван Петров">
+              <h3>Иван Петров</h3>
+              <p>100+ выигранных дел</p>
+              <span>5 лет опыта</span>
+            </article>
+
+            <article class="specialist-card">
+              <img src="assets/images/placeholder-photo.svg" alt="Иван Петров">
+              <h3>Иван Петров</h3>
+              <p>100+ выигранных дел</p>
+              <span>5 лет опыта</span>
+            </article>
+
+            <article class="specialist-card">
+              <img src="assets/images/placeholder-photo.svg" alt="Иван Петров">
+              <h3>Иван Петров</h3>
+              <p>100+ выигранных дел</p>
+              <span>5 лет опыта</span>
+            </article>
+          </div>
+
+          <button class="slider-arrow slider-arrow--right" type="button">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="services services--citizens">
+      <div class="container">
+        <div class="section-label">услуги</div>
+        <h2 class="section-title">Услуги для граждан</h2>
+
+        <div class="services-grid">
+          <a href="#" class="service-card service-card--image">
+            <img src="assets/images/placeholder-photo.svg" alt="">
+            <span>Семейные споры</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card">
+            <span>Трудовые споры</span>
+            <i>→</i>
+          </a>
+
+          <a href="service-real-estate.html" class="service-card service-card--image service-card--wide">
+            <img src="assets/images/placeholder-photo.svg" alt="">
+            <span>Юрист по недвижимости</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card">
+            <span>Банкротство физического лица</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card service-card--image">
+            <img src="assets/images/placeholder-photo.svg" alt="">
+            <span>Представительство в судах</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card">
+            <span>Споры с государственными органами</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card">
+            <span>Имущественные споры</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card service-card--image">
+            <img src="assets/images/placeholder-photo.svg" alt="">
+            <span>Защита прав потребителя</span>
+            <i>→</i>
+          </a>
+        </div>
+
+        <div class="services__more">
+          <a href="services-citizens.html">Смотреть все <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services services--business">
+      <div class="container">
+        <h2 class="section-title">Услуги для бизнеса</h2>
+
+        <div class="services-grid">
+          <a href="#" class="service-card">
+            <span>Арбитражные дела</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card service-card--image">
+            <img src="assets/images/placeholder-photo.svg" alt="">
+            <span>Налоговое право</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card service-card--image">
+            <img src="assets/images/placeholder-photo.svg" alt="">
+            <span>Составление договоров</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card">
+            <span>Юрист по интеллектуальной собственности</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card service-card--image">
+            <img src="assets/images/placeholder-photo.svg" alt="">
+            <span>Сопровождение бизнеса</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card">
+            <span>Защита деловой репутации компании</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card service-card--image">
+            <img src="assets/images/placeholder-photo.svg" alt="">
+            <span>Трудовые споры</span>
+            <i>→</i>
+          </a>
+
+          <a href="#" class="service-card">
+            <span>Ликвидация юридического лица</span>
+            <i>→</i>
+          </a>
+        </div>
+
+        <div class="services__more">
+          <a href="services-business.html">Смотреть все <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="section-label section-label--center">отзывы</div>
+        <h2 class="section-title section-title--center">
+          Мнение наших клиентов —<br>
+          главная оценка нашей работы
+        </h2>
+        <p class="reviews__subtitle">
+          Мы благодарны клиентам, которые доверили нам решение своих сложных задач.
+          Их успех — это наша лучшая рекомендация и доказательство эффективности нашего подхода.
+        </p>
+
+        <div class="reviews__grid">
+          <article class="review-card">
+            <p>
+              Обратились в [Название вашей фирмы] с запутанным корпоративным спором.
+              Юристы провели глубочайший анализ, выстроили безупречную позицию и
+              привели нас к полной победе в суде. Профессионализм высочайшего уровня.
+            </p>
+            <strong>Дмитрий С., директор ООО «Вектор»</strong>
+          </article>
+
+          <article class="review-card">
+            <p>
+              Попали под волну клеветы от конкурентов. Команда [Название вашей фирмы]
+              действовала молниеносно: добилась удаления статей, выиграла суд и взыскала
+              солидную компенсацию.
+            </p>
+            <strong>Елена К., основатель бренда одежды</strong>
+          </article>
+
+          <article class="review-card">
+            <p>
+              Требовалось юридически безупречно провести слияние. [Название вашей фирмы]
+              не только идеально структурировали сделку, но и нашли риски, о которых мы
+              не подозревали.
+            </p>
+            <strong>Иван Л., владелец строительной компании</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Получите бесплатную<br>консультацию прямо сейчас</h2>
+        <a href="#" class="btn btn--red">Связаться</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <a href="/" class="footer__logo">
+        <img src="assets/images/logo.svg" alt="Номос">
+      </a>
+
+      <a href="tel:+79991234567" class="footer-contact">
+        <span class="footer-icon">☎</span>
+        + 7 (999) 123 - 45 - 67
+      </a>
+
+      <a href="mailto:example@mail.ru" class="footer-contact">
+        <span class="footer-icon">✉</span>
+        example@mail.ru
+      </a>
+
+      <div class="footer-socials">
+        <a href="#">◉</a>
+        <a href="#">◉</a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <div class="footer-col">
+        <h3>Компания</h3>
+        <a href="about.html">О компании</a>
+        <a href="#">Юристы</a>
+        <a href="#">Отзывы</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Услуги</h3>
+        <a href="services-citizens.html">Для граждан</a>
+        <a href="services-business.html">Для бизнеса</a>
+        <a href="#">Задать вопрос</a>
+      </div>
+
+      <div class="footer-col footer-col--dev">
+        <p>сайт разработан<br>компанией <b>ИС Арт</b></p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Адрес</h3>
+        <p>г. Москва,<br>ул. Ленина, д. 2</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

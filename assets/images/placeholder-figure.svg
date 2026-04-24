@@ -1,0 +1,8 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="1000" fill="#F1F1F1"/>
+  <circle cx="404" cy="216" r="94" fill="#D98632" fill-opacity="0.2"/>
+  <path d="M301 391C301 334.115 347.115 288 404 288C460.885 288 507 334.115 507 391V435H301V391Z" fill="#CFCFCF"/>
+  <path d="M243 463H565L626 870H182L243 463Z" fill="#D9D9D9"/>
+  <path d="M176 871H632" stroke="#C7153F" stroke-width="18" stroke-linecap="round" stroke-opacity="0.35"/>
+  <text x="400" y="114" fill="#6F7178" font-family="Arial, sans-serif" font-size="34" text-anchor="middle">FEMIDA PLACEHOLDER</text>
+</svg>
