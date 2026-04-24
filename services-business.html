@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Услуги для граждан — Номос</title>
+  <title>Услуги для бизнеса — Номос</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="services-citizens-page">
+
+<body class="services-business-page">
 
 <div class="page">
   <div class="decor decor--top-right"></div>
@@ -31,16 +32,16 @@
         <a href="/" class="nav__link">Главная</a>
         <a href="about.html" class="nav__link">О компании</a>
         <div class="nav-item nav-item--dropdown">
-          <a href="services-business.html" class="nav__link nav__link--dropdown" data-dropdown-toggle="business">Услуги для бизнеса</a>
+          <a href="services-business.html" class="nav__link nav__link--dropdown nav__link--active" data-dropdown-toggle="business">Услуги для бизнеса</a>
           <div class="nav-dropdown" data-dropdown-menu="business">
             <a href="services-business.html" class="nav-dropdown__link">Все услуги</a>
             <a href="#" class="nav-dropdown__link">Арбитражные дела</a>
             <a href="#" class="nav-dropdown__link">Налоговое право</a>
-            <a href="#" class="nav-dropdown__link">Сопровождение бизнеса</a>
+            <a href="#" class="nav-dropdown__link nav-dropdown__link--active">Защита бизнеса</a>
           </div>
         </div>
         <div class="nav-item nav-item--dropdown">
-          <a href="services-citizens.html" class="nav__link nav__link--dropdown nav__link--active" data-dropdown-toggle="citizens">Услуги для граждан</a>
+          <a href="services-citizens.html" class="nav__link nav__link--dropdown" data-dropdown-toggle="citizens">Услуги для граждан</a>
           <div class="nav-dropdown" data-dropdown-menu="citizens">
             <a href="services-citizens.html" class="nav-dropdown__link">Все услуги</a>
             <a href="#" class="nav-dropdown__link">Семейные споры</a>
@@ -61,15 +62,16 @@
   </header>
 
   <main>
-    <section class="page-hero page-hero--citizens">
+    <section class="page-hero page-hero--business">
       <div class="container page-hero__inner">
         <div class="page-hero__content">
-          <h1>Услуги для граждан</h1>
+          <h1>Услуги для бизнеса</h1>
           <p>Получите бесплатную<br>консультацию прямо сейчас</p>
-          <a href="#" class="btn btn--orange">Связаться</a>
+          <a href="#" class="btn btn--red">Связаться</a>
         </div>
+
         <div class="page-hero__image">
-          <img src="assets/images/dlya-grazhdan.jpg" alt="Услуги для граждан">
+          <img src="assets/images/dlya-biznesa.jpg" alt="Услуги для бизнеса">
         </div>
       </div>
     </section>
@@ -81,7 +83,7 @@
 
           <div class="service-about__content">
             <div class="service-about__text">
-              <h2>Юридическая помощь<br>для граждан</h2>
+              <h2>Юридическая помощь<br>для бизнеса</h2>
 
               <p>Мы предлагаем профессиональную правовую поддержку в сложных ситуациях. Консультации, подготовка документов, защита интересов в суде и органах власти. Индивидуальный подход, внимание к деталям и забота о каждом клиенте помогают нам находить оптимальные решения и защищать ваши права.</p>
 
@@ -95,11 +97,11 @@
                   <span>Успешной практики</span>
                 </div>
                 <div class="stats__item">
-                  <strong>1000 +</strong>
+                  <strong>1500 +</strong>
                   <span>Выигранных дел</span>
                 </div>
                 <div class="stats__item">
-                  <strong>95%</strong>
+                  <strong>98%</strong>
                   <span>Довольных клиентов</span>
                 </div>
               </div>
@@ -113,53 +115,53 @@
       </div>
     </section>
 
-    <section class="services services--citizens services--citizens-page">
+    <section class="services services--business services--business-page">
       <div class="container">
         <div class="section-label section-label--services-cases">кейсы</div>
-        <h2 class="section-title section-title--services-page">Услуги для граждан</h2>
+        <h2 class="section-title section-title--services-page">Услуги для бизнеса</h2>
 
         <div class="services-grid">
-          <a href="#" class="service-card service-card--image service-card--citizens-family">
+          <a href="#" class="service-card service-card--image service-card--business-family">
             <img src="assets/images/semeinye-spory.png" alt="">
-            <span>Семейные споры</span>
+            <span>Арбитражные дела</span>
             <i><img src="assets/images/кнопка перелистывания.svg" alt="" aria-hidden="true"></i>
           </a>
 
-          <a href="#" class="service-card service-card--citizens-state">
-            <span>Споры с государственными органами</span>
+          <a href="#" class="service-card service-card--business-state">
+            <span>Юрист по интеллектуальной собственности</span>
             <i><img src="assets/images/кнопка перелистывания.svg" alt="" aria-hidden="true"></i>
           </a>
 
-          <a href="#" class="service-card service-card--citizens-labor">
-            <span>Трудовые споры</span>
+          <a href="#" class="service-card service-card--business-labor">
+            <span>Сопровождение бизнеса</span>
             <i><img src="assets/images/кнопка перелистывания.svg" alt="" aria-hidden="true"></i>
           </a>
 
-          <a href="#" class="service-card service-card--image service-card--citizens-court">
+          <a href="#" class="service-card service-card--image service-card--business-court">
             <img src="assets/images/predstavitelstvo-vysokaya.jpg" alt="">
-            <span>Представительство в судах</span>
+            <span>Налоговое право</span>
             <i><img src="assets/images/кнопка перелистывания.svg" alt="" aria-hidden="true"></i>
           </a>
 
-          <a href="#" class="service-card service-card--citizens-property">
-            <span>Имущественные споры</span>
+          <a href="#" class="service-card service-card--business-property">
+            <span>Составление договоров</span>
             <i><img src="assets/images/кнопка перелистывания.svg" alt="" aria-hidden="true"></i>
           </a>
 
-          <a href="service-real-estate.html" class="service-card service-card--image service-card--citizens-real-estate">
-            <img src="assets/images/yurist-shirokyi.jpg" alt="">
-            <span>Юрист по недвижимости</span>
-            <i><img src="assets/images/кнопка перелистывания.svg" alt="" aria-hidden="true"></i>
-          </a>
-
-          <a href="#" class="service-card service-card--citizens-bankruptcy">
-            <span>Банкротство физического лица</span>
-            <i><img src="assets/images/кнопка перелистывания.svg" alt="" aria-hidden="true"></i>
-          </a>
-
-          <a href="#" class="service-card service-card--image service-card--citizens-consumer">
+          <a href="#" class="service-card service-card--image service-card--business-consumer">
             <img src="assets/images/zaschita-vysokaya.jpg" alt="">
-            <span>Защита прав потребителя</span>
+            <span>Защита деловой репутации компании</span>
+            <i><img src="assets/images/кнопка перелистывания.svg" alt="" aria-hidden="true"></i>
+          </a>
+
+          <a href="#" class="service-card service-card--business-real-estate">
+            <span>Ликвидация<br>юридического лица</span>
+            <i><img src="assets/images/кнопка перелистывания.svg" alt="" aria-hidden="true"></i>
+          </a>
+
+          <a href="#" class="service-card service-card--image service-card--business-bankruptcy">
+            <img src="assets/images/yurist-shirokyi.jpg" alt="">
+            <span>Трудовые споры</span>
             <i><img src="assets/images/кнопка перелистывания.svg" alt="" aria-hidden="true"></i>
           </a>
         </div>
@@ -178,17 +180,17 @@
 
           <div class="fit-block__grid">
             <article class="fit-card">
-              <img src="assets/images/team-1.jpg" alt="">
+              <img src="assets/images/chastnym-licam.jpg" alt="">
               <p>Частным лицам, столкнувшимся с проблемами в семье или на работе</p>
             </article>
 
             <article class="fit-card">
-              <img src="assets/images/team-2.png" alt="">
+              <img src="assets/images/lyudi-stolknuvshiesya.jpg" alt="">
               <p>Граждане, ищеющие имущественные споры или проблемы с наследством</p>
             </article>
 
             <article class="fit-card">
-              <img src="assets/images/team-3.png" alt="">
+              <img src="assets/images/vladelcy-nedvizhimosy.jpg" alt="">
               <p>Владельцы и покупатели недвижимости</p>
             </article>
 
@@ -205,7 +207,7 @@
       <div class="container">
         <div class="cta__inner">
           <h2>Получите бесплатную<br>консультацию прямо сейчас</h2>
-          <a href="#" class="btn btn--orange">Связаться</a>
+          <a href="#" class="btn btn--red">Связаться</a>
         </div>
       </div>
     </section>

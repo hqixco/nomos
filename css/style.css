@@ -241,9 +241,18 @@ textarea {
   color: var(--red);
 }
 
+.nav-dropdown__link--active {
+  background: #f6f6f6;
+  color: var(--red);
+}
+
 .nav__link:hover,
 .nav__link--active {
   color: var(--red);
+}
+
+.nav__link--active {
+  font-weight: 700;
 }
 
 .header-phone {
@@ -324,6 +333,8 @@ textarea {
 }
 
 .section-label--center {
+  width: 100px;
+
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -881,7 +892,12 @@ textarea {
 }
 
 .cta__inner {
+  width: 660px;
   text-align: center;
+  background-color: #f8f8f8;
+  padding: 30px 0;
+  border-radius: 16px;
+  margin: 0 auto;
 }
 
 .cta h2 {
@@ -1714,29 +1730,34 @@ textarea {
   color: var(--red);
 }
 
-.services--citizens-page {
+.services--citizens-page,
+.services--business-page {
   padding-top: 4px;
 }
 
-.services--citizens-page .service-card {
+.services--citizens-page .service-card,
+.services--business-page .service-card {
   height: 220px;
   display: grid;
   align-items: stretch;
   padding: 0;
 }
 
-.services--citizens-page .service-card span {
+.services--citizens-page .service-card span,
+.services--business-page .service-card span {
   font-size: 22px;
   line-height: 1.18;
   align-self: end;
   padding: 18px 21px;
 }
 
-.services--citizens-page .service-card--image {
+.services--citizens-page .service-card--image,
+.services--business-page .service-card--image {
   grid-template-rows: minmax(0, 1fr) auto;
 }
 
-.services--citizens-page .service-card--image img {
+.services--citizens-page .service-card--image img,
+.services--business-page .service-card--image img {
   position: static;
   inset: auto;
   width: 100%;
@@ -1745,14 +1766,17 @@ textarea {
   align-self: stretch;
 }
 
-.services--citizens-page .services-grid {
+.services--citizens-page .services-grid,
+.services--business-page .services-grid {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 220px);
   align-items: start;
 }
 
 .services--citizens-page .service-card i,
-.services--citizens-page .service-card i img {
+.services--citizens-page .service-card i img,
+.services--business-page .service-card i,
+.services--business-page .service-card i img {
   width: 40px;
   height: 40px;
 }
@@ -1795,6 +1819,48 @@ textarea {
 }
 
 .services--citizens-page .service-card--citizens-bankruptcy {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.services--business-page .service-card--business-family {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.services--business-page .service-card--business-state {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+}
+
+.services--business-page .service-card--business-labor {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.services--business-page .service-card--business-court {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  height: 460px;
+}
+
+.services--business-page .service-card--business-property {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.services--business-page .service-card--business-consumer {
+  grid-column: 4;
+  grid-row: 2 / span 2;
+  height: 460px;
+}
+
+.services--business-page .service-card--business-real-estate {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+.services--business-page .service-card--business-bankruptcy {
   grid-column: 3;
   grid-row: 3;
 }
@@ -1926,7 +1992,8 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .services--citizens-page .services-grid {
+  .services--citizens-page .services-grid,
+  .services--business-page .services-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: none;
   }
@@ -1938,7 +2005,15 @@ textarea {
   .services--citizens-page .service-card--citizens-property,
   .services--citizens-page .service-card--citizens-consumer,
   .services--citizens-page .service-card--citizens-real-estate,
-  .services--citizens-page .service-card--citizens-bankruptcy {
+  .services--citizens-page .service-card--citizens-bankruptcy,
+  .services--business-page .service-card--business-family,
+  .services--business-page .service-card--business-state,
+  .services--business-page .service-card--business-labor,
+  .services--business-page .service-card--business-court,
+  .services--business-page .service-card--business-property,
+  .services--business-page .service-card--business-consumer,
+  .services--business-page .service-card--business-real-estate,
+  .services--business-page .service-card--business-bankruptcy {
     grid-column: auto;
     grid-row: auto;
     height: 200px;
@@ -1970,7 +2045,8 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .services--citizens-page .services-grid {
+  .services--citizens-page .services-grid,
+  .services--business-page .services-grid {
     grid-template-columns: 1fr;
     grid-template-rows: none;
   }
@@ -1982,8 +2058,21 @@ textarea {
   .services--citizens-page .service-card--citizens-property,
   .services--citizens-page .service-card--citizens-consumer,
   .services--citizens-page .service-card--citizens-real-estate,
-  .services--citizens-page .service-card--citizens-bankruptcy {
+  .services--citizens-page .service-card--citizens-bankruptcy,
+  .services--business-page .service-card--business-family,
+  .services--business-page .service-card--business-state,
+  .services--business-page .service-card--business-labor,
+  .services--business-page .service-card--business-court,
+  .services--business-page .service-card--business-property,
+  .services--business-page .service-card--business-consumer,
+  .services--business-page .service-card--business-real-estate,
+  .services--business-page .service-card--business-bankruptcy {
     height: 170px;
+  }
+
+  .services--business-page .service-card {
+    height: 220px;
+    min-height: 0;
   }
 
   .service-about {
@@ -1996,5 +2085,621 @@ textarea {
 
   .fit-block {
     padding-top: 30px;
+  }
+}
+
+.cta__text {
+  max-width: 560px;
+  margin: -4px auto 16px;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #343743;
+}
+
+.service-real-estate-page .cta__text,
+.service-construction-page .cta__text {
+  max-width: 720px;
+}
+
+.services-help {
+  position: relative;
+  z-index: 2;
+  padding: 8px 0 60px;
+}
+
+.services-help .section-title {
+  margin-top: 14px;
+  margin-bottom: 34px;
+}
+
+.services-help__grid {
+  max-width: 1494px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.services-help__card {
+  width: 360px;
+  height: 160px;
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 30px;
+  background: #f6f6f6;
+  border-radius: 8px;
+}
+
+.services-help__icon {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  object-fit: contain;
+}
+
+.services-help__card p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #20232d;
+}
+
+@media (max-width: 1200px) {
+  .services-help__grid {
+    max-width: 100%;
+  }
+
+  .services-help__card {
+    width: calc((100% - 36px) / 3);
+    min-width: 0;
+    height: 140px;
+    padding: 15px 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cta {
+    padding: 18px 0 72px;
+  }
+
+  .cta__inner {
+    width: 100%;
+    max-width: 100%;
+    padding: 28px 24px;
+  }
+
+  .cta h2 {
+    font-size: 30px;
+    line-height: 1.16;
+    margin-bottom: 20px;
+  }
+
+  .cta .btn {
+    min-width: 220px;
+  }
+
+  .services-help__grid {
+    max-width: 100%;
+  }
+
+  .services-help__card {
+    width: calc((100% - 18px) / 2);
+    height: 130px;
+  }
+
+  .services-help__card p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 560px) {
+  .cta {
+    padding: 8px 0 48px;
+  }
+
+  .cta__inner {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 16px;
+  }
+
+  .cta h2 {
+    font-size: 24px;
+    line-height: 1.18;
+    margin-bottom: 16px;
+  }
+
+  .cta .btn {
+    width: 100%;
+    max-width: 320px;
+    min-width: 0;
+  }
+
+  .services-help__card {
+    width: 100%;
+    height: auto;
+    min-height: 68px;
+    padding: 15px 18px;
+  }
+
+  .services-help__card p {
+    font-size: 18px;
+  }
+
+  .service-real-estate-page .cta h2,
+  .service-construction-page .cta h2 {
+    font-size: 24px;
+    line-height: 1.18;
+  }
+
+  .service-real-estate-page .cta__text,
+  .service-construction-page .cta__text {
+    max-width: 100%;
+    margin: 8px auto 18px;
+    padding: 0 8px;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-company {
+  position: relative;
+  z-index: 2;
+  padding: 76px 0 52px;
+}
+
+.section-label--about-company {
+  width: 140px;
+}
+
+.section-label--about-history {
+  width: 160px;
+}
+
+.about-company__card {
+  position: relative;
+  min-height: 1510px;
+  padding: 50px 60px 68px;
+  background: rgba(230, 230, 230, 0.5);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.about-company__hero {
+  position: relative;
+  z-index: 2;
+  min-height: 980px;
+  margin-top: 26px;
+}
+
+.about-company__column {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 520px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.about-company__title {
+  position: absolute;
+  top: 285px;
+  left: 50%;
+  z-index: 3;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 184px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  color: #101424;
+}
+
+.about-company__stat {
+  position: absolute;
+  top: 455px;
+  z-index: 4;
+  width: 230px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about-company__stat--left {
+  left: 315px;
+  text-align: right;
+}
+
+.about-company__stat--right {
+  right: 315px;
+  text-align: left;
+}
+
+.about-company__stat strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--red);
+}
+
+.about-company__stat span {
+  display: block;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #252833;
+}
+
+.about-company__text {
+  width: 910px;
+  position: absolute;
+  left: 50%;
+  top: 720px;
+  z-index: 4;
+  min-height: 92px;
+  transform: translateX(-50%);
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(65, 65, 65, 0.25));
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(40px);
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #2f323b;
+}
+
+.about-history {
+  position: relative;
+  z-index: 3;
+  margin-top: 390px;
+  text-align: center;
+}
+
+.about-history h2 {
+  margin: 30px 0 20px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #111522;
+}
+
+.about-history > p {
+  margin: 0 auto 56px;
+  max-width: 470px;
+  font-size: 17px;
+  line-height: 1.35;
+  color: #6b6d75;
+}
+
+.timeline {
+  position: relative;
+  width: 1160px;
+  max-width: 100%;
+  height: 96px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline__asset {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.timeline__point {
+  position: relative;
+  z-index: 2;
+  width: 90px;
+  height: 72px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.timeline__point span {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #e3b327;
+  transition: transform 0.2s ease;
+}
+
+.timeline__point b {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 43px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #252833;
+}
+
+.timeline__point--active span {
+  top: -7px;
+  width: 26px;
+  height: 26px;
+  background: var(--red);
+}
+
+.timeline__point:not(.timeline__point--active):hover span {
+  transform: translateX(-50%) scale(1.12);
+}
+
+.timeline__point--active b {
+  top: 43px;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--red);
+}
+
+.timeline__arrow {
+  position: absolute;
+  right: -18px;
+  top: 5px;
+  color: var(--red);
+  font-size: 26px;
+  line-height: 1;
+}
+
+.timeline__caption {
+  margin-top: 18px;
+  text-align: left;
+  padding-left: 70px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #646464;
+}
+
+.about-logo-block {
+  position: relative;
+  z-index: 2;
+  padding: 90px 0 110px;
+  text-align: center;
+}
+
+.about-logo-block img {
+  width: 360px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .about-company__card {
+    min-height: 1340px;
+  }
+
+  .about-company__title {
+    font-size: 110px;
+  }
+
+  .about-company__stat--left {
+    left: 190px;
+  }
+
+  .about-company__stat--right {
+    right: 190px;
+  }
+
+  .about-company__column {
+    width: 410px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-company {
+    padding-top: 42px;
+  }
+
+  .about-company__card {
+    min-height: auto;
+    padding: 36px 22px 44px;
+  }
+
+  .about-company__hero {
+    min-height: 760px;
+  }
+
+  .about-company__column {
+    width: 300px;
+  }
+
+  .about-company__title {
+    top: 210px;
+    font-size: 84px;
+  }
+
+  .about-company__stat {
+    top: 330px;
+    width: 170px;
+    margin-top: 0;
+  }
+
+  .about-company__stat--left {
+    left: 40px;
+  }
+
+  .about-company__stat--right {
+    right: 40px;
+  }
+
+  .about-company__text {
+    top: 470px;
+    width: calc(100% - 40px);
+    padding: 24px 22px;
+    font-size: 14px;
+  }
+
+  .about-history {
+    margin-top: 220px;
+  }
+
+  .about-history h2 {
+    margin: 24px 0 14px;
+    font-size: 40px;
+  }
+
+  .about-history > p {
+    margin-bottom: 32px;
+    font-size: 14px;
+  }
+
+  .timeline {
+    width: max-content;
+    min-width: 760px;
+    overflow-x: auto;
+    gap: 24px;
+    padding-top: 12px;
+  }
+
+  .timeline__caption {
+    padding-left: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-company {
+    padding-top: 24px;
+    padding-bottom: 34px;
+  }
+
+  .about-company__card {
+    padding: 28px 16px 34px;
+  }
+
+  .about-company__hero {
+    min-height: 640px;
+    margin-top: 18px;
+  }
+
+  .about-company__column {
+    width: 220px;
+  }
+
+  .about-company__title {
+    top: 158px;
+    font-size: 42px;
+    letter-spacing: 0.04em;
+  }
+
+  .about-company__stat {
+    position: absolute;
+    top: 250px;
+    width: 115px;
+    margin-bottom: 0;
+  }
+
+  .about-company__stat strong {
+    font-size: 24px;
+  }
+
+  .about-company__stat span {
+    font-size: 13px;
+  }
+
+  .about-company__stat--left {
+    left: 0;
+    text-align: right;
+  }
+
+  .about-company__stat--right {
+    right: 0;
+    text-align: left;
+  }
+
+  .about-company__text {
+    top: 392px;
+    width: calc(100% - 16px);
+    min-height: 0;
+    padding: 18px 16px;
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  .about-history {
+    margin-top: 0;
+  }
+
+  .about-history h2 {
+    font-size: 30px;
+  }
+
+  .about-history > p {
+    margin-bottom: 24px;
+    font-size: 13px;
+  }
+
+  .timeline {
+    min-width: 100%;
+    height: 86px;
+    gap: 18px;
+    padding-top: 8px;
+  }
+
+  .timeline__point {
+    width: 76px;
+  }
+
+  .timeline__point b {
+    top: 38px;
+    font-size: 14px;
+  }
+
+  .timeline__point--active b {
+    top: 38px;
+    font-size: 18px;
+  }
+
+  .timeline__caption {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .about-logo-block {
+    padding: 26px 0 44px;
+  }
+
+  .about-logo-block img {
+    width: 220px;
+  }
+
+  .timeline__asset {
+    top: 12px;
+  }
+
+  .timeline__point--active span {
+    width: 20px;
+    height: 20px;
+
+    top: -3px;
   }
 }

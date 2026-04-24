@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Юрист по недвижимости — Номос</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="service-real-estate-page">
+
+<div class="page">
+  <div class="decor decor--top-right"></div>
+  <div class="decor decor--left"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <img src="assets/images/logo.svg" alt="Номос">
+      </a>
+
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="site-nav">
+        <a href="/" class="nav__link">Главная</a>
+        <a href="about.html" class="nav__link">О компании</a>
+        <div class="nav-item nav-item--dropdown">
+          <a href="services-business.html" class="nav__link nav__link--dropdown" data-dropdown-toggle="business">Услуги для бизнеса</a>
+          <div class="nav-dropdown" data-dropdown-menu="business">
+            <a href="services-business.html" class="nav-dropdown__link">Все услуги</a>
+            <a href="#" class="nav-dropdown__link">Арбитражные дела</a>
+            <a href="#" class="nav-dropdown__link">Налоговое право</a>
+            <a href="#" class="nav-dropdown__link">Сопровождение бизнеса</a>
+          </div>
+        </div>
+        <div class="nav-item nav-item--dropdown">
+          <a href="services-citizens.html" class="nav__link nav__link--dropdown nav__link--active" data-dropdown-toggle="citizens">Услуги для граждан</a>
+          <div class="nav-dropdown" data-dropdown-menu="citizens">
+            <a href="services-citizens.html" class="nav-dropdown__link">Все услуги</a>
+            <a href="#" class="nav-dropdown__link">Семейные споры</a>
+            <a href="#" class="nav-dropdown__link">Трудовые споры</a>
+            <a href="service-real-estate.html" class="nav-dropdown__link nav-dropdown__link--active">Юрист по недвижимости</a>
+            <a href="service-construction.html" class="nav-dropdown__link">Строительный юрист</a>
+          </div>
+        </div>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+        <a href="cases.html" class="nav__link">Кейсы</a>
+      </nav>
+
+      <a href="tel:+79991234567" class="header-phone">
+        <span>+7(999)123-45-67</span>
+        <small>позвоните сейчас</small>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--real-estate">
+      <div class="container page-hero__inner">
+        <div class="page-hero__content">
+          <h1>Юрист по<br>недвижимости</h1>
+          <p>Получите бесплатную консультацию<br>прямо сейчас</p>
+          <a href="#" class="btn btn--orange">Связаться</a>
+        </div>
+        <div class="page-hero__image">
+          <img src="assets/images/yurist-hero.jpg" alt="Юрист по недвижимости">
+        </div>
+      </div>
+    </section>
+
+    <section class="service-about">
+      <div class="container">
+        <div class="service-about__card">
+          <div class="section-label section-label--service-about">об услуге</div>
+
+          <div class="service-about__content">
+            <div class="service-about__text">
+              <h2>Сделки с недвижимостью<br>без проблем и рисков</h2>
+
+              <p>Сделки с недвижимостью — это всегда значительные финансовые решения, которые требуют особого внимания к деталям. Даже небольшая ошибка в договоре или незамеченное обременение на объекте могут привести к серьёзным потерям, судебным разбирательствам и долгим спорам. Юрист по недвижимости помогает избежать подобных рисков: он проверяет «чистоту» документов, выявляет скрытые проблемы и предлагает безопасные решения.</p>
+
+              <p>Мы сопровождаем клиентов на всех этапах — от предварительной консультации и анализа документов до подписания договора и регистрации права собственности. Если возникают конфликты, связанные с разделом имущества, арендой или правами наследования, мы представляем интересы клиента в переговорах и в суде. Наша задача — обеспечить законность, прозрачность и безопасность каждой сделки, чтобы вы могли быть уверены в результате и защищены от возможных угроз.</p>
+            </div>
+
+            <div class="service-about__image">
+              <img src="assets/images/about-image.png" alt="Фемида">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-help">
+      <div class="container">
+        <div class="section-label section-label--center">услуги</div>
+        <h2 class="section-title section-title--center">
+          Мы оказываем помощь в<br>
+          следующих вопросах
+        </h2>
+
+        <div class="services-help__grid">
+          <article class="services-help__card">
+            <img class="services-help__icon" src="assets/images/Vector.svg" alt="" aria-hidden="true">
+            <p>Правовая проверка<br>объектов недвижимости</p>
+          </article>
+
+          <article class="services-help__card">
+            <img class="services-help__icon" src="assets/images/Vector.svg" alt="" aria-hidden="true">
+            <p>Подготовка и сопровождение сделок купли-продажи</p>
+          </article>
+
+          <article class="services-help__card">
+            <img class="services-help__icon" src="assets/images/Vector.svg" alt="" aria-hidden="true">
+            <p>Разрешение споров по разделу имущества</p>
+          </article>
+
+          <article class="services-help__card">
+            <img class="services-help__icon" src="assets/images/Vector.svg" alt="" aria-hidden="true">
+            <p>Проверка договоров аренды и найма</p>
+          </article>
+
+          <article class="services-help__card">
+            <img class="services-help__icon" src="assets/images/Vector.svg" alt="" aria-hidden="true">
+            <p>Представительство в суде при имущественных спорах</p>
+          </article>
+
+          <article class="services-help__card">
+            <img class="services-help__icon" src="assets/images/Vector.svg" alt="" aria-hidden="true">
+            <p>Консультация по вопросам наследования недвижимости</p>
+          </article>
+
+          <article class="services-help__card">
+            <img class="services-help__icon" src="assets/images/Vector.svg" alt="" aria-hidden="true">
+            <p>Сопровождение ипотечных сделок и работы с банками</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="fit-block">
+      <div class="container">
+        <div class="fit-block__inner">
+          <div class="section-label section-label--fit section-label--center">для кого</div>
+          <h2 class="section-title section-title--fit section-title--center">Услуга подойдет</h2>
+
+          <div class="fit-block__grid">
+            <article class="fit-card">
+              <img src="assets/images/fit-real-estate-1.jpg" alt="">
+              <p>Частным лицам</p>
+            </article>
+
+            <article class="fit-card">
+              <img src="assets/images/fit-real-estate-2.jpg" alt="">
+              <p>Инвесторам и застройщикам</p>
+            </article>
+
+            <article class="fit-card">
+              <img src="assets/images/fit-real-estate-3.jpg" alt="">
+              <p>Арендаторам и арендодателям</p>
+            </article>
+
+            <article class="fit-card">
+              <img src="assets/images/fit-real-estate-4.jpg" alt="">
+              <p>Наследникам имущества</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta__inner">
+          <h2>Хотите быть уверены в<br>безопасности сделки с<br>недвижимостью?</h2>
+          <p class="cta__text">Свяжитесь с нами — юрист по недвижимости проверит документы, подготовит договор и защитит ваши интересы</p>
+          <a href="#" class="btn btn--red">Связаться</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <a href="/" class="footer__logo">
+            <img src="assets/images/logo.svg" alt="Номос">
+          </a>
+
+          <a href="tel:+79991234567" class="footer-contact">
+            <img class="footer-icon" src="assets/images/Viber.svg" alt="" aria-hidden="true">
+            + 7 (999) 123 - 45 - 67
+          </a>
+
+          <a href="mailto:example@mail.ru" class="footer-contact">
+            <img class="footer-icon" src="assets/images/Outlook.svg" alt="" aria-hidden="true">
+            example@mail.ru
+          </a>
+
+          <div class="footer-socials">
+            <a href="#" aria-label="Telegram">
+              <img src="assets/images/telegram button.svg" alt="" aria-hidden="true">
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <img src="assets/images/whatsapp button.svg" alt="" aria-hidden="true">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer-col">
+            <h3>Компания</h3>
+            <a href="about.html">О компании</a>
+            <a href="#">Юристы</a>
+            <a href="#">Отзывы</a>
+          </div>
+
+          <div class="footer-col">
+            <h3>Услуги</h3>
+            <a href="services-citizens.html">Для граждан</a>
+            <a href="services-business.html">Для бизнеса</a>
+            <a href="#">Задать вопрос</a>
+          </div>
+
+          <div class="footer-col">
+            <h3>Адрес</h3>
+            <p>г. Москва,<br>ул. Ленина, д. 2</p>
+          </div>
+        </div>
+
+        <div class="footer-col footer-col--dev">
+          <p>сайт разработан<br>компанией <b>ИС Арт</b></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

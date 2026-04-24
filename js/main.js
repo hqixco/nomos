@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropdownToggles = document.querySelectorAll("[data-dropdown-toggle]");
   const sliders = document.querySelectorAll("[data-slider]");
   const sliderImages = document.querySelectorAll(".specialist-card img");
+  const timelines = document.querySelectorAll(".timeline");
   const header = document.querySelector(".header");
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav");
@@ -184,5 +185,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("resize", updateSlider);
     updateSlider();
+  });
+
+  timelines.forEach(function (timeline) {
+    const points = timeline.querySelectorAll(".timeline__point");
+    const caption = timeline.parentElement.querySelector(".timeline__caption");
+
+    points.forEach(function (point) {
+      point.addEventListener("click", function () {
+        points.forEach(function (item) {
+          item.classList.remove("timeline__point--active");
+          item.setAttribute("aria-pressed", "false");
+        });
+
+        point.classList.add("timeline__point--active");
+        point.setAttribute("aria-pressed", "true");
+
+        if (caption && point.dataset.caption) {
+          caption.textContent = point.dataset.caption;
+        }
+      });
+    });
   });
 });
