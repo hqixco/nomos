@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Наши кейсы — Номос</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="cases-page">
+
+<div class="page">
+  <div class="decor decor--top-right"></div>
+  <div class="decor decor--left"></div>
+  <div class="decor decor--bottom-right"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <img src="assets/images/logo.svg" alt="Номос">
+      </a>
+
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="site-nav">
+        <a href="/" class="nav__link">Главная</a>
+        <a href="about.html" class="nav__link">О компании</a>
+        <div class="nav-item nav-item--dropdown">
+          <a href="services-business.html" class="nav__link nav__link--dropdown" data-dropdown-toggle="business">Услуги для бизнеса</a>
+          <div class="nav-dropdown" data-dropdown-menu="business">
+            <a href="services-business.html" class="nav-dropdown__link">Все услуги</a>
+            <a href="#" class="nav-dropdown__link">Арбитражные дела</a>
+            <a href="#" class="nav-dropdown__link">Налоговое право</a>
+            <a href="#" class="nav-dropdown__link">Сопровождение бизнеса</a>
+          </div>
+        </div>
+        <div class="nav-item nav-item--dropdown">
+          <a href="services-citizens.html" class="nav__link nav__link--dropdown" data-dropdown-toggle="citizens">Услуги для граждан</a>
+          <div class="nav-dropdown" data-dropdown-menu="citizens">
+            <a href="services-citizens.html" class="nav-dropdown__link">Все услуги</a>
+            <a href="#" class="nav-dropdown__link">Семейные споры</a>
+            <a href="#" class="nav-dropdown__link">Трудовые споры</a>
+            <a href="service-real-estate.html" class="nav-dropdown__link">Юрист по недвижимости</a>
+            <a href="service-construction.html" class="nav-dropdown__link">Строительный юрист</a>
+          </div>
+        </div>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+        <a href="cases.html" class="nav__link nav__link--active">Кейсы</a>
+      </nav>
+
+      <a href="tel:+79991234567" class="header-phone">
+        <span>+7(999)123-45-67</span>
+        <small>позвоните сейчас</small>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--cases">
+      <div class="container page-hero__inner">
+        <div class="page-hero__content">
+          <h1>Наши кейсы</h1>
+          <p class="page-hero__subtitle page-hero__subtitle--cases">Получите бесплатную консультацию<br>прямо сейчас</p>
+          <a href="#" class="btn btn--orange">Связаться</a>
+        </div>
+
+        <div class="page-hero__image">
+          <img src="assets/images/kejsy.jpg" alt="Наши кейсы">
+        </div>
+      </div>
+    </section>
+
+    <section class="service-about">
+      <div class="container">
+        <div class="service-about__card">
+          <div class="section-label section-label--service-about">об услуге</div>
+
+          <div class="service-about__content">
+            <div class="service-about__text">
+              <h2>Опыт, подтверждённый<br>результатами</h2>
+
+              <p>Мы верим, что лучший показатель профессионализма юриста — реальные истории помощи клиентам. В разделе «Кейсы» мы собрали примеры решённых дел, которые демонстрируют наш подход, стратегию и результат. Каждый кейс — это не просто победа в суде, но и защита прав, восстановление справедливости и уверенность клиента в завтрашнем дне.</p>
+
+              <p>Мы верим, что лучший показатель профессионализма юриста — реальные истории помощи клиентам. В разделе «Кейсы» мы собрали примеры решённых дел, которые демонстрируют наш подход, стратегию и результат. Каждый кейс — это не просто победа в суде, но и защита прав, восстановление справедливости и уверенность клиента в завтрашнем дне.</p>
+
+              <p>Мы верим, что лучший показатель профессионализма юриста — реальные истории помощи клиентам. В разделе «Кейсы» мы собрали примеры решённых дел, которые демонстрируют наш подход, стратегию и результат. Каждый кейс — это не просто победа в суде, но и защита прав, восстановление справедливости и уверенность клиента в завтрашнем дне.</p>
+            </div>
+
+            <div class="service-about__image">
+              <img src="assets/images/about-image.png" alt="Фемида">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cases-reasons">
+      <div class="container">
+        <div class="section-label section-label--center">Кейсы</div>
+        <h2 class="section-title section-title--center">Почему мы публикуем кейсы?</h2>
+
+        <div class="cases-reasons__grid">
+          <article class="cases-reasons__card">
+            <img class="cases-reasons__icon" src="assets/images/Vector.svg" alt="" aria-hidden="true">
+            <div>
+              <h3>Прозрачность</h3>
+              <p>Вы видите, как мы работаем в реальных ситуациях</p>
+            </div>
+          </article>
+
+          <article class="cases-reasons__card">
+            <img class="cases-reasons__icon" src="assets/images/Vector.svg" alt="" aria-hidden="true">
+            <div>
+              <h3>Практическая ценность</h3>
+              <p>Многие кейсы похожи на Ваши жизненные обстоятельства</p>
+            </div>
+          </article>
+
+          <article class="cases-reasons__card">
+            <img class="cases-reasons__icon" src="assets/images/Vector.svg" alt="" aria-hidden="true">
+            <div>
+              <h3>Доверие</h3>
+              <p>Наши результаты подтверждаются фактами</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cases-examples">
+      <div class="container">
+        <div class="cases-examples__inner">
+          <div class="cases-examples__slider" data-slider="cases">
+            <button class="slider-arrow cases-examples__arrow cases-examples__arrow--left" type="button" data-slider-prev aria-label="Предыдущий кейс">
+              <img src="assets/images/кнопка перелистывания.svg" alt="" aria-hidden="true">
+            </button>
+
+          <div class="section-label section-label--center section-label--cases-examples">примеры</div>
+            <h2 class="section-title section-title--center">Примеры наших дел</h2>
+
+            <div class="specialists__viewport cases-examples__viewport">
+              <div class="specialists__grid cases-examples__grid" data-slider-track>
+                <article class="case-card">
+                  <img src="assets/images/case-family.jpg" alt="">
+                  <h3>Семейные споры</h3>
+                  <p>Клиент обратился в вопросе раздела имущества после развода.</p>
+                  <p>Мы добились справедливого распределения и защиты интересов детей.</p>
+                </article>
+
+                <article class="case-card">
+                  <img src="assets/images/case-property.jpg" alt="">
+                  <h3>Имущественные конфликты</h3>
+                  <p>Спор между соседями о границах земельного участка.</p>
+                  <p>Наши юристы доказали права клиента и обеспечили корректную регистрацию участка.</p>
+                </article>
+
+                <article class="case-card">
+                  <img src="assets/images/case-consumer.jpg" alt="">
+                  <h3>Защита прав потребителей</h3>
+                  <p>Клиент купил товар ненадлежащего качества.</p>
+                  <p>Мы вернули стоимость товара и взыскали компенсацию морального вреда.</p>
+                </article>
+
+            <article class="case-card">
+              <img src="assets/images/case-real-estate.jpg" alt="">
+              <h3>Недвижимость</h3>
+              <p>Помощь в проверке «чистоты» квартиры при покупке.</p>
+              <p>Благодаря нашей экспертизе клиент избежал сделки с объектом, находящимся под арестом.</p>
+            </article>
+
+            <article class="case-card">
+              <img src="assets/images/case-family.jpg" alt="">
+              <h3>Наследственные споры</h3>
+              <p>Клиент столкнулся с оспариванием прав на наследуемую недвижимость.</p>
+              <p>Мы подтвердили законность требований и обеспечили оформление имущества в пользу клиента.</p>
+            </article>
+
+            <article class="case-card">
+              <img src="assets/images/case-property.jpg" alt="">
+              <h3>Земельные вопросы</h3>
+              <p>Возник конфликт по использованию и границам земельного участка.</p>
+              <p>Нам удалось устранить спор и защитить зарегистрированные права собственника.</p>
+            </article>
+
+            <article class="case-card">
+              <img src="assets/images/case-consumer.jpg" alt="">
+              <h3>Договорные споры</h3>
+              <p>Клиенту навязали невыгодные условия и отказались исполнять обязательства.</p>
+              <p>Мы добились расторжения договора и компенсации причинённых убытков.</p>
+            </article>
+          </div>
+            </div>
+
+            <button class="slider-arrow cases-examples__arrow cases-examples__arrow--right" type="button" data-slider-next aria-label="Следующий кейс">
+              <img src="assets/images/кнопка перелистывания.svg" alt="" aria-hidden="true">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta__inner">
+          <h2>Ваша история может стать следующим успешным кейсом</h2>
+          <p class="cta__text">Если вы столкнулись с юридической проблемой, свяжитесь с нами. Мы разберём вашу ситуацию, предложим стратегию и добьёмся результата, который в будущем станет примером успешного решения.</p>
+          <a href="#" class="btn btn--red">Связаться</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <a href="/" class="footer__logo">
+            <img src="assets/images/logo.svg" alt="Номос">
+          </a>
+
+          <a href="tel:+79991234567" class="footer-contact">
+            <img class="footer-icon" src="assets/images/Viber.svg" alt="" aria-hidden="true">
+            + 7 (999) 123 - 45 - 67
+          </a>
+
+          <a href="mailto:example@mail.ru" class="footer-contact">
+            <img class="footer-icon" src="assets/images/Outlook.svg" alt="" aria-hidden="true">
+            example@mail.ru
+          </a>
+
+          <div class="footer-socials">
+            <a href="#" aria-label="Telegram">
+              <img src="assets/images/telegram button.svg" alt="" aria-hidden="true">
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <img src="assets/images/whatsapp button.svg" alt="" aria-hidden="true">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer-col">
+            <h3>Компания</h3>
+            <a href="about.html">О компании</a>
+            <a href="#">Юристы</a>
+            <a href="#">Отзывы</a>
+          </div>
+
+          <div class="footer-col">
+            <h3>Услуги</h3>
+            <a href="services-citizens.html">Для граждан</a>
+            <a href="services-business.html">Для бизнеса</a>
+            <a href="#">Задать вопрос</a>
+          </div>
+
+          <div class="footer-col">
+            <h3>Адрес</h3>
+            <p>г. Москва,<br>ул. Ленина, д. 2</p>
+          </div>
+        </div>
+
+        <div class="footer-col footer-col--dev">
+          <p>сайт разработан<br>компанией <b>ИС Арт</b></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div class="contact-modal" data-contact-modal aria-hidden="true">
+  <div class="contact-modal__backdrop" data-contact-modal-backdrop></div>
+  <div class="contact-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <button class="contact-modal__close" type="button" aria-label="Закрыть" data-contact-modal-close></button>
+    <h2 class="contact-modal__title" id="contact-modal-title">Связаться</h2>
+    <p class="contact-modal__text">Оставьте номер телефона, и мы свяжемся с вами в ближайшее время.</p>
+    <form class="contact-modal__form" data-contact-form>
+      <input class="contact-modal__field" type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required data-contact-phone>
+      <label class="contact-modal__checkbox">
+        <input type="checkbox" name="privacy" required>
+        <span>Я соглашаюсь с <a href="#" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a></span>
+      </label>
+      <button class="btn btn--red contact-modal__submit" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

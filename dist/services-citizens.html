@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/main-CMPX9bDG.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-CJK9oyV5.css">
+  <script type="module" crossorigin src="/assets/main-HnsTfZtN.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BxVLqOz8.css">
 </head>
 <body class="services-citizens-page">
 
@@ -66,7 +66,7 @@
       <div class="container page-hero__inner">
         <div class="page-hero__content">
           <h1>Услуги для граждан</h1>
-          <p>Получите бесплатную<br>консультацию прямо сейчас</p>
+          <p class="page-hero__subtitle page-hero__subtitle--citizens">Получите бесплатную<br>консультацию прямо сейчас</p>
           <a href="#" class="btn btn--orange">Связаться</a>
         </div>
         <div class="page-hero__image">
@@ -159,7 +159,7 @@
           </a>
 
           <a href="#" class="service-card service-card--image service-card--citizens-consumer">
-            <img src="/assets/zaschita-vysokaya-RqSHlTX-.jpg" alt="">
+            <img src="/assets/case-consumer-RqSHlTX-.jpg" alt="">
             <span>Защита прав потребителя</span>
             <i><img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='20'%20cy='20'%20r='20'%20transform='matrix(-1%200%200%201%2040%200)'%20fill='white'/%3e%3cpath%20d='M28.5303%2019.4697C28.8232%2019.7626%2028.8232%2020.2374%2028.5303%2020.5303L23.7574%2025.3033C23.4645%2025.5962%2022.9896%2025.5962%2022.6967%2025.3033C22.4038%2025.0104%2022.4038%2024.5355%2022.6967%2024.2426L26.9393%2020L22.6967%2015.7574C22.4038%2015.4645%2022.4038%2014.9896%2022.6967%2014.6967C22.9896%2014.4038%2023.4645%2014.4038%2023.7574%2014.6967L28.5303%2019.4697ZM12%2020L12%2019.25L28%2019.25L28%2020L28%2020.75L12%2020.75L12%2020Z'%20fill='%23C51535'/%3e%3c/svg%3e" alt="" aria-hidden="true"></i>
           </a>
@@ -267,6 +267,23 @@
       </div>
     </div>
   </footer>
+</div>
+
+<div class="contact-modal" data-contact-modal aria-hidden="true">
+  <div class="contact-modal__backdrop" data-contact-modal-backdrop></div>
+  <div class="contact-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <button class="contact-modal__close" type="button" aria-label="Закрыть" data-contact-modal-close></button>
+    <h2 class="contact-modal__title" id="contact-modal-title">Связаться</h2>
+    <p class="contact-modal__text">Оставьте номер телефона, и мы свяжемся с вами в ближайшее время.</p>
+    <form class="contact-modal__form" data-contact-form>
+      <input class="contact-modal__field" type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required data-contact-phone>
+      <label class="contact-modal__checkbox">
+        <input type="checkbox" name="privacy" required>
+        <span>Я соглашаюсь с <a href="#" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a></span>
+      </label>
+      <button class="btn btn--red contact-modal__submit" type="submit">Отправить</button>
+    </form>
+  </div>
 </div>
 
 </body>

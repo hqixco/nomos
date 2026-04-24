@@ -65,7 +65,7 @@
       <div class="container page-hero__inner">
         <div class="page-hero__content">
           <h1>Услуги для граждан</h1>
-          <p>Получите бесплатную<br>консультацию прямо сейчас</p>
+          <p class="page-hero__subtitle page-hero__subtitle--citizens">Получите бесплатную<br>консультацию прямо сейчас</p>
           <a href="#" class="btn btn--orange">Связаться</a>
         </div>
         <div class="page-hero__image">
@@ -178,22 +178,22 @@
 
           <div class="fit-block__grid">
             <article class="fit-card">
-              <img src="assets/images/team-1.jpg" alt="">
+              <img src="assets/images/chastnym-licam.jpg" alt="">
               <p>Частным лицам, столкнувшимся с проблемами в семье или на работе</p>
             </article>
 
             <article class="fit-card">
-              <img src="assets/images/team-2.png" alt="">
+              <img src="assets/images/predstavitelstvo-vysokaya.jpg" alt="">
               <p>Граждане, ищеющие имущественные споры или проблемы с наследством</p>
             </article>
 
             <article class="fit-card">
-              <img src="assets/images/team-3.png" alt="">
+              <img src="assets/images/fit-real-estate-3.jpg" alt="">
               <p>Владельцы и покупатели недвижимости</p>
             </article>
 
             <article class="fit-card">
-              <img src="assets/images/team-4.png" alt="">
+              <img src="assets/images/lyudi-stolknuvshiesya.jpg" alt="">
               <p>Люди, столкнувшиеся с нарушением прав потребителя</p>
             </article>
           </div>
@@ -266,6 +266,23 @@
       </div>
     </div>
   </footer>
+</div>
+
+<div class="contact-modal" data-contact-modal aria-hidden="true">
+  <div class="contact-modal__backdrop" data-contact-modal-backdrop></div>
+  <div class="contact-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <button class="contact-modal__close" type="button" aria-label="Закрыть" data-contact-modal-close></button>
+    <h2 class="contact-modal__title" id="contact-modal-title">Связаться</h2>
+    <p class="contact-modal__text">Оставьте номер телефона, и мы свяжемся с вами в ближайшее время.</p>
+    <form class="contact-modal__form" data-contact-form>
+      <input class="contact-modal__field" type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required data-contact-phone>
+      <label class="contact-modal__checkbox">
+        <input type="checkbox" name="privacy" required>
+        <span>Я соглашаюсь с <a href="#" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a></span>
+      </label>
+      <button class="btn btn--red contact-modal__submit" type="submit">Отправить</button>
+    </form>
+  </div>
 </div>
 
 <script type="module" src="js/main.js"></script>

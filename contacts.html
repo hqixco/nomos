@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>О компании — Номос</title>
+  <title>Контакты — Номос</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="about-page">
+
+<body class="contacts-page">
 
 <div class="page">
   <div class="decor decor--top-right"></div>
-  <div class="decor decor--left"></div>
   <div class="decor decor--bottom-right"></div>
 
   <header class="header">
@@ -30,7 +30,7 @@
 
       <nav class="nav" id="site-nav">
         <a href="/" class="nav__link">Главная</a>
-        <a href="about.html" class="nav__link nav__link--active">О компании</a>
+        <a href="about.html" class="nav__link">О компании</a>
         <div class="nav-item nav-item--dropdown">
           <a href="services-business.html" class="nav__link nav__link--dropdown" data-dropdown-toggle="business">Услуги для бизнеса</a>
           <div class="nav-dropdown" data-dropdown-menu="business">
@@ -50,7 +50,7 @@
             <a href="service-construction.html" class="nav-dropdown__link">Строительный юрист</a>
           </div>
         </div>
-        <a href="contacts.html" class="nav__link">Контакты</a>
+        <a href="contacts.html" class="nav__link nav__link--active">Контакты</a>
         <a href="cases.html" class="nav__link">Кейсы</a>
       </nav>
 
@@ -62,83 +62,58 @@
   </header>
 
   <main>
-    <section class="about-company">
+    <section class="contacts-section">
       <div class="container">
-        <div class="about-company__card">
-          <div class="section-label section-label--center section-label--about-company">о компании</div>
+        <div class="contacts-card">
+          <div class="contacts-card__col contacts-card__col--left">
+            <h1>Контакты</h1>
 
-          <div class="about-company__hero">
-            <img class="about-company__column" src="assets/images/column.png" alt="Колонна">
+            <div class="contacts-list">
+              <a href="tel:+79991234567" class="contacts-list__item">
+                <span>+ 7 (999) 123 - 45 - 67</span>
+                <img class="contacts-list__icon" src="assets/images/Viber.svg" alt="" aria-hidden="true">
+              </a>
 
-            <h1 class="about-company__title">НОМОС</h1>
+              <a href="#" class="contacts-list__item">
+                <span>@nomostg</span>
+                <img class="contacts-list__icon" src="assets/images/telegram button.svg" alt="" aria-hidden="true">
+              </a>
 
-            <div class="about-company__stat about-company__stat--left">
-              <strong>23 года</strong>
-              <span>Защищаем и отстаиваем<br>ваши интересы</span>
+              <a href="tel:+79991234567" class="contacts-list__item">
+                <span>+ 7 (999) 123 - 45 - 67</span>
+                <img class="contacts-list__icon" src="assets/images/whatsapp button.svg" alt="" aria-hidden="true">
+              </a>
+
+              <a href="mailto:example@mail.ru" class="contacts-list__item">
+                <span>example@mail.ru</span>
+                <img class="contacts-list__icon" src="assets/images/Outlook.svg" alt="" aria-hidden="true">
+              </a>
             </div>
 
-            <div class="about-company__stat about-company__stat--right">
-              <strong>100 000 +</strong>
-              <span>Клиентов<br>юридических лиц</span>
-            </div>
-
-            <div class="about-company__text">
-              Мы предлагаем профессиональную правовую поддержку в сложных ситуациях.
-              Консультации, подготовка документов, защита интересов в суде и органах власти.
-              Индивидуальный подход, внимание к деталям и забота о каждом клиенте помогают
-              нам находить оптимальные решения и защищать ваши права.
+            <div class="contacts-cta">
+              <h2>Не хотите ждать?</h2>
+              <a href="#" class="btn btn--red">Связаться</a>
             </div>
           </div>
 
-          <div class="about-history">
-            <div class="section-label section-label--center section-label--about-history">наша история</div>
+          <div class="contacts-card__col contacts-card__col--right">
+            <h2>Адрес</h2>
+            <p>г. Москва, ул. Ленина, д. 2</p>
 
-            <h2>История компании</h2>
-            <p>Пройдитесь по нашим ключевым событиям, нажимая на даты</p>
-
-            <div class="timeline">
-              <img class="timeline__asset" src="assets/images/timeline.svg" alt="" aria-hidden="true">
-
-              <button class="timeline__point timeline__point--active" type="button" data-caption="Начало юридической практики компании “Номос”" aria-pressed="true">
-                <span></span>
-                <b>2002</b>
-              </button>
-
-              <button class="timeline__point" type="button" data-caption="Расширение практики и формирование ключевых направлений юридической поддержки" aria-pressed="false">
-                <span></span>
-                <b>2003</b>
-              </button>
-
-              <button class="timeline__point" type="button" data-caption="Запуск сопровождения корпоративных клиентов и первых крупных судебных проектов" aria-pressed="false">
-                <span></span>
-                <b>2004</b>
-              </button>
-
-              <button class="timeline__point" type="button" data-caption="Укрепление команды специалистов и развитие практики представительства в судах" aria-pressed="false">
-                <span></span>
-                <b>2005</b>
-              </button>
-
-              <button class="timeline__point" type="button" data-caption="Расширение клиентского портфеля и выход на комплексное сопровождение бизнеса" aria-pressed="false">
-                <span></span>
-                <b>2006</b>
-              </button>
-
-              <button class="timeline__point" type="button" data-caption="Усиление экспертизы компании в спорах, сделках и стратегической правовой защите клиентов" aria-pressed="false">
-                <span></span>
-                <b>2007</b>
-              </button>
-            </div>
-
-            <div class="timeline__caption">
-              Начало юридической практики компании “Номос”
+            <div class="contacts-map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A8f6f6cc49bc2b57f7a2198db321a9c8e1f4d7f0d1c8c0e66f0a5f4f4a3d7b0c1&amp;source=constructor"
+                title="Карта"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="about-logo-block">
+    <section class="about-logo-block contacts-logo-block">
       <div class="container">
         <img src="assets/images/logo-big.svg" alt="Номос юридические услуги">
       </div>

@@ -2,12 +2,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll('a[href="#"]');
   const dropdownToggles = document.querySelectorAll("[data-dropdown-toggle]");
   const sliders = document.querySelectorAll("[data-slider]");
-  const sliderImages = document.querySelectorAll(".specialist-card img");
+  const sliderImages = document.querySelectorAll(".specialist-card img, .case-card img");
   const timelines = document.querySelectorAll(".timeline");
   const header = document.querySelector(".header");
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav");
   const navLinks = document.querySelectorAll(".nav .nav__link:not(.nav__link--dropdown), .nav-dropdown__link");
+  const contactTriggers = document.querySelectorAll('a.btn[href="#"]');
+  const contactModal = document.querySelector("[data-contact-modal]");
+  const contactModalClose = contactModal ? contactModal.querySelector("[data-contact-modal-close]") : null;
+  const contactModalBackdrop = contactModal ? contactModal.querySelector("[data-contact-modal-backdrop]") : null;
+  const contactModalForm = contactModal ? contactModal.querySelector("[data-contact-form]") : null;
+  const contactPhoneInput = contactModal ? contactModal.querySelector("[data-contact-phone]") : null;
 
   links.forEach(function (link) {
     link.addEventListener("click", function (event) {
@@ -27,6 +33,114 @@ document.addEventListener("DOMContentLoaded", function () {
     header.classList.remove("is-menu-open");
     burger.setAttribute("aria-expanded", "false");
   }
+
+  function openContactModal() {
+    if (!contactModal) {
+      return;
+    }
+
+    contactModal.classList.add("is-open");
+    contactModal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("is-modal-open");
+
+    if (contactPhoneInput) {
+      window.setTimeout(function () {
+        contactPhoneInput.focus();
+      }, 180);
+    }
+  }
+
+  function closeContactModal() {
+    if (!contactModal) {
+      return;
+    }
+
+    contactModal.classList.remove("is-open");
+    contactModal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("is-modal-open");
+  }
+
+  function formatPhoneValue(value) {
+    const digits = value.replace(/\D/g, "");
+
+    if (!digits) {
+      return "";
+    }
+
+    const normalized = digits.startsWith("8")
+      ? "7" + digits.slice(1)
+      : digits.startsWith("7")
+        ? digits
+        : "7" + digits;
+    const trimmed = normalized.slice(0, 11);
+    const parts = trimmed.split("");
+    let result = "+" + (parts[0] || "");
+
+    if (parts.length > 1) {
+      result += " (" + parts.slice(1, 4).join("");
+    }
+
+    if (parts.length >= 4) {
+      result += ")";
+    }
+
+    if (parts.length > 4) {
+      result += " " + parts.slice(4, 7).join("");
+    }
+
+    if (parts.length > 7) {
+      result += "-" + parts.slice(7, 9).join("");
+    }
+
+    if (parts.length > 9) {
+      result += "-" + parts.slice(9, 11).join("");
+    }
+
+    return result;
+  }
+
+  contactTriggers.forEach(function (trigger) {
+    trigger.addEventListener("click", function () {
+      openContactModal();
+    });
+  });
+
+  if (contactModalClose) {
+    contactModalClose.addEventListener("click", function () {
+      closeContactModal();
+    });
+  }
+
+  if (contactModalBackdrop) {
+    contactModalBackdrop.addEventListener("click", function () {
+      closeContactModal();
+    });
+  }
+
+  if (contactPhoneInput) {
+    contactPhoneInput.addEventListener("input", function () {
+      contactPhoneInput.value = formatPhoneValue(contactPhoneInput.value);
+    });
+  }
+
+  if (contactModalForm) {
+    contactModalForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      if (!contactModalForm.reportValidity()) {
+        return;
+      }
+
+      contactModalForm.reset();
+      closeContactModal();
+    });
+  }
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && contactModal && contactModal.classList.contains("is-open")) {
+      closeContactModal();
+    }
+  });
 
   if (burger && header) {
     burger.addEventListener("click", function () {
@@ -82,6 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevButton = slider.querySelector("[data-slider-prev]");
     const nextButton = slider.querySelector("[data-slider-next]");
     const slides = Array.from(track.children);
+    const sliderType = slider.dataset.slider || "";
     let currentIndex = 0;
     let startX = 0;
     let startOffset = 0;
@@ -89,6 +204,18 @@ document.addEventListener("DOMContentLoaded", function () {
     let isDragging = false;
 
     function getVisibleSlides() {
+      if (sliderType === "cases") {
+        if (window.innerWidth <= 560) {
+          return 1;
+        }
+
+        if (window.innerWidth <= 900) {
+          return 2;
+        }
+
+        return 4;
+      }
+
       if (window.innerWidth <= 560) {
         return 1;
       }
