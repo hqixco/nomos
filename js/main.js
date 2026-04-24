@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropdownToggles = document.querySelectorAll("[data-dropdown-toggle]");
   const sliders = document.querySelectorAll("[data-slider]");
   const sliderImages = document.querySelectorAll(".specialist-card img");
+  const header = document.querySelector(".header");
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav");
+  const navLinks = document.querySelectorAll(".nav .nav__link:not(.nav__link--dropdown), .nav-dropdown__link");
 
   links.forEach(function (link) {
     link.addEventListener("click", function (event) {
@@ -12,6 +16,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
   sliderImages.forEach(function (image) {
     image.setAttribute("draggable", "false");
+  });
+
+  function closeMenu() {
+    if (!header || !burger) {
+      return;
+    }
+
+    header.classList.remove("is-menu-open");
+    burger.setAttribute("aria-expanded", "false");
+  }
+
+  if (burger && header) {
+    burger.addEventListener("click", function () {
+      const isOpen = header.classList.toggle("is-menu-open");
+      burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+  }
+
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      closeMenu();
+    });
   });
 
   dropdownToggles.forEach(function (toggle) {
@@ -32,10 +58,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.addEventListener("click", function (event) {
+    if (header && burger && nav && !event.target.closest(".header")) {
+      closeMenu();
+    }
+
     if (!event.target.closest(".nav-item--dropdown")) {
       document.querySelectorAll(".nav-item.is-open").forEach(function (openItem) {
         openItem.classList.remove("is-open");
       });
+    }
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 900) {
+      closeMenu();
     }
   });
 
