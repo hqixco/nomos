@@ -1118,6 +1118,9 @@ textarea {
     -webkit-backdrop-filter: blur(20px);
     box-shadow: 0 18px 40px rgba(19, 23, 34, 0.08);
     overflow: visible;
+    width: 100%;
+    max-width: none;
+    justify-self: stretch;
   }
 
   .header.is-menu-open .nav {
@@ -1317,10 +1320,18 @@ textarea {
 
   .nav {
     gap: 14px;
+    width: calc(100% + 32px);
+    margin-left: 12px;
+    margin-right: -16px;
+    border-radius: 0;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
   }
 
   .nav__link {
-    font-size: 11px;
+    font-size: 15px;
+    justify-content: center;
   }
 
   .logo img {
@@ -1405,6 +1416,11 @@ textarea {
     padding: 0 28px;
   }
 
+  .specialists__viewport::before,
+  .specialists__viewport::after {
+    display: none;
+  }
+
   .services-grid,
   .footer__bottom {
     grid-template-columns: 1fr;
@@ -1420,7 +1436,7 @@ textarea {
   }
 
   .specialist-card img {
-    height: 240px;
+    height: 370px;
   }
 
   .specialist-card h3 {
@@ -1434,13 +1450,13 @@ textarea {
   }
 
   .service-card {
-    height: 170px;
-    min-height: 170px;
+    height: 200px;
+    min-height: 200px;
     padding: 0 16px 16px;
   }
 
   .service-card img {
-    height: 112px;
+    height: 147px;
   }
 
   .service-card span {
